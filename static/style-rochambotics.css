@@ -1,0 +1,180 @@
+:root {
+  --bg: #181717;
+  --lightbg: rgba(46 45 45 / 0.3);
+  --lightbg2: rgb(46 45 45);
+  --blackBlue: #033b55;
+  --blue: #0e65a3;
+  --lightBlue: #008cf0;
+  --darkOrange: #865000;
+  --orange: #f79500;
+  --greyish:  #f2f2f2;
+  --grey:  #8a8a8a;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--greyish);
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+body, html {
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: var(--bg);
+  display: flex;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  top: 60px;
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+
+h1, h2, h3, h4 {
+  font-family: "good-times", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* ---- ---- NAVBAR ---- ---- */
+
+
+:root {
+  --navHeight: 60px;
+}
+
+nav {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--navHeight);
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  border-right: 3px solid var(--grey);
+  transition-duration: 1s;
+}
+
+nav > span {
+  display: relative;
+  border-radius: 50%;
+  padding: 10px;
+  transition-duration: 0.5s;
+}
+
+nav > span:hover {
+  background: rgba(242, 242, 242, 0.2);
+  box-shadow: 0px 0px 10px rgba(242, 242, 242, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+#backMenu {
+  display: none;
+}
+
+
+/* ---- ---- OTHER ---- ---- */
+
+
+iframe {
+  width: calc(100% - 500px);
+  height: 100%;
+  display: block;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body > div {
+  width: 500px;
+  border-left: 3px solid var(--grey);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg);
+}
+
+div > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  display: flex;
+}
+
+.todo > ol {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: var(--lightbg2);
+  border-radius: 20px;
+  padding: 0;
+}
+
+.todo > ol > span {
+  display: flex;
+  padding: 18px 32px;
+  justify-content: left;
+  border-bottom: 1px solid var(--grey);
+}
+
+.todo > ol > span:last-child {
+  border: none;
+}
+
+.todo > ol > span:hover {
+  opacity: 0.8;
+}
+
+input[type="submit"], .action {
+  background: var(--orange);
+  border: none;
+  border-radius: 50px;
+  padding: 9px 16px;
+  width: 250px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+form > span {
+  display: flex;
+}
+
+input:not(input[type="submit"]) {
+  border: none;
+  border-radius: 50px;
+  padding: 9px 16px;
+  width: 250px;
+  font-size: 16px;
+}
+
+input[name="num"] {
+  width: 50px;
+}
