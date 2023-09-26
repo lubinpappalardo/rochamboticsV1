@@ -1,0 +1,99 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 20vh 0;
+  }
+  
+  .title > img {
+    animation: img-animation 1s ease-out;
+    animation-timing-function: cubic-bezier(.02,.01,0,1);
+    transition-duration: 0.5s;
+  }
+  
+  .title > img:hover {
+    transform: scale(1.1) rotate(360deg);
+  }
+  
+  @keyframes img-animation {
+    from { opacity: 0; transform: rotate(360deg) scale(0); }
+    to { opacity: 1; transform: rotate(0) scale(1); }
+  }
+  
+  h1 {
+    margin: 20px 0 0 0;
+    animation: h1-animation 1s ease-out;
+    animation-timing-function: cubic-bezier(.02,.01,0,1);
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes h1-animation {
+    from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  h1 > span {
+    font-size:calc(12px + 5vw);
+    font-family: "good-times", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    transition-duration: 1s;
+  }
+  
+  h1 > span:nth-child(1):hover { transform: rotate(7deg) translate(-7%, 10%); }
+  
+  h1 > span:nth-child(2):hover { transform: rotate(-8deg) translate(10%, -12%); }
+  
+  h1 > span:nth-child(3):hover { transform: rotate(10deg) translate(-6%, 8%); }
+  
+  h1 > span:nth-child(4):hover { transform: rotate(-6deg) translate(2%, -13%); }
+  
+  h1 > span:nth-child(5):hover { transform: rotate(9deg) translate(-14%, 8%); }
+  
+  h1 > span:nth-child(6):hover { transform: rotate(-7deg) translate(-12%, -5%); }
+  
+  h1 > span:nth-child(7):hover {transform: rotate(8deg) translate(10%, -8%); }
+  
+  h1 > span:nth-child(8):hover { transform: rotate(-9deg) translate(4%, 14%); }
+  
+  h1 > span:nth-child(9):hover { transform: rotate(6deg) translate(14%, -4%); }
+  
+  h1 > span:nth-child(10):hover { transform: rotate(7deg) translate(-8%, 7%); }
+  
+  h1 > span:nth-child(11):hover { transform: rotate(-9deg) translate(1%, -14%); }
+  
+  h1 > span:nth-child(12):hover { transform: rotate(8deg) translate(-12%, 9%); }
+  
+  h1 > span:hover {
+    color: var(--orange);
+  }
+  
+  @keyframes letter-click {
+    from { color: var(--greyish); }
+    to {  color: var(--orange);  }
+  }
+  
+  .sub-title {
+    font-family: "flood-std", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--blue);
+    font-size:calc(12px + 3vw);
+    margin: 0;
+    transform: rotate(-2deg) translateY(-10%);
+    animation: subtitle-animation 0.5s ease-out;
+  }
+  
+  @keyframes subtitle-animation {
+    from { opacity: 0; font-size: 10px; }
+    to { opacity: 1; font-size:calc(12px + 3vw);  }
+  }
+  
+  .desc {
+    max-width: 1000px;
+    width: 50%;
+    min-width: 300px;
+    text-align: center;
+    font-size: calc(12px + 0.5vw);
+  }

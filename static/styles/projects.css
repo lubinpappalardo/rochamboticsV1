@@ -1,0 +1,125 @@
+/* ---- ---- PROJECTS ---- ---- */
+
+
+.projects {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, auto));
+    justify-content: center;
+    gap: 5vw;
+  }
+  
+  .projects-desc {
+    font-size: calc(12px + 0.4vw);
+    margin-bottom: 40px;
+    max-width: 1000px;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .projects {
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .projects > div {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
+    width: 20vw;
+    height: 20vw;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .projects > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .projects > div > div {
+    position: relative;
+    border: 6px solid var(--grey);
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    min-width: 300px;
+    min-height: 300px;
+    width: 20vw;
+    height: 20vw;
+    padding: 20px;
+    text-align: center;
+    transition-duration: 0.5s;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .projects > div > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  .projects > div > div:hover {
+    background: var(--lightbg);
+    transform: rotate(2deg) scale(1.1);
+  }
+  
+  .projects > div:hover > img  {
+    transform: translate(-20%, -30%) rotate(180deg) scale(1);
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .projects > div:hover > img {
+      transform: translate(-40%, -30%) rotate(180deg) scale(1);
+    }
+  }
+  
+  #project-gear1 {
+    --gearWidth: 100px;
+    width: var(--gearWidth);
+    top: 85%;
+    left: -10%;
+    animation: rotate-counter-clockwise 4s infinite linear;
+  }
+  
+  #project-gear2 {
+    --gearWidth: 150px;
+    width: var(--gearWidth);
+    top: -15%;
+    left: 80%;
+    animation: rotate-clockwise 6s infinite linear;
+  }
+  
+  .projects > div > img {
+    --splashWidth: 800px;
+    z-index: -3;
+    width: var(--splashWidth);
+    top: 0;
+    left: 0; 
+    transform: translate(-20%, -30%) rotate(180deg) scale(0);
+    transition-duration: 0.5s;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .projects > div > img {
+      left: 50%;
+      transform: translate(-40%, -30%) rotate(180deg) scale(0);
+    }
+  }
+  
+  .projects > div > div > h3 {
+    font-size: calc(12px + 0.6vw);
+    color: var(--orange);
+  }
+  
+  .projects > div > div > img {
+    border-radius: 50px;
+  }
+  
+  

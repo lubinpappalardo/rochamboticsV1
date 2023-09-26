@@ -1,0 +1,114 @@
+/* .becoming-desc {
+    font-size: calc(12px + 0.4vw);
+    margin-bottom: 40px;
+    max-width: 1000px;
+    width: 50%;
+    min-width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .becoming {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 50%;
+    min-width: 300px;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    transition-duration: 0.5s;
+  }
+  
+  .becoming:hover {
+    background: var(--lightbg);
+  }
+  
+  .becoming > span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .becoming > span > span {
+    margin-top: 5px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: var(--blackBlue);
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: var(--blue);
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: var(--blue);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: relative;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 0px;
+    top: -1px;
+    width: 7px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .becoming-conclu {
+    font-size: calc(12px + 0.4vw);
+    line-height: 20px;
+    max-width: 1000px;
+    width: 50%;
+    min-width: 300px;
+    color: var(--orange);
+    text-align: center;
+  } */

@@ -1,0 +1,78 @@
+.gear {
+    position: absolute;
+    z-index: -3;
+  }
+  
+  #gear1 {
+    --gearWidth: 13%;
+    width: var(--gearWidth);
+    top: 10vw; /* 100px */
+    left: calc(-0.25 * var(--gearWidth));  
+    animation: rotate-counter-clockwise 7s infinite linear;
+  }
+  #gear2 {
+    width: 19.5%;
+    top: 19vw; /* 240px */
+    left: 0;
+    animation: rotate-clockwise 10s infinite linear;
+  }
+  #gear3 {
+    --gearWidth: 9.75%;
+    width: var(--gearWidth);
+    top: -4vw /*calc(-0.5 * var(--gearWidth))*/;
+    left: 80vw /*calc(100% - var(--gearWidth) - 150px)*/;
+    animation: rotate-clockwise 6s infinite linear;
+  }
+  #gear4 {
+    --gearWidth: 22.75%;
+    width: var(--gearWidth);
+    top: -3vw /*calc(-0.15 * var(--gearWidth))*/;
+    left: 85vw /*calc(100% - (0.65 * var(--gearWidth)))*/;
+    animation: rotate-counter-clockwise 11s infinite linear;
+  }
+  #gear5 {
+    --gearWidth: 13%;
+    width: var(--gearWidth);
+    top: 16.8vw /*255px*/;
+    left: 93vw /*calc(100% - (0.6 * var(--gearWidth)))*/;
+    animation: rotate-clockwise 8s infinite linear;
+  }
+  
+  @keyframes rotate-clockwise {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes rotate-counter-clockwise {
+    to { transform: rotate(-360deg); }
+  }
+  
+
+  
+  
+.splash {
+    position: absolute;
+    z-index: -4;
+}
+  
+  #splash1 {
+    --splashWidth: 60%;
+    width: var(--splashWidth);
+    top: -36vw;
+    left: -15vw; 
+    transform: scale(1) rotate(180deg);
+  }
+  
+  #splash2 {
+    --splashWidth: 24%;
+    width: var(--splashWidth);
+    top: -15vw;
+    left: 75vw; 
+  }
+  
+  #splash3 {
+    --splashWidth: 60%;
+    width: var(--splashWidth);
+    top: 30vw;
+    left: 70vw; 
+    transform: rotate(100deg);
+  }
+  

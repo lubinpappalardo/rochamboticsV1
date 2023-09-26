@@ -1,0 +1,94 @@
+nav {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: -60px;
+    width: var(--navWidth);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    align-items: center;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-right: 3px solid var(--grey);
+    transition-duration: 1s;
+}
+  
+#nav.show { left: 0; }
+  
+nav > span {
+    display: relative;
+    border-radius: 50%;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+  
+nav > span:hover {
+    background: rgba(242, 242, 242, 0.2);
+    box-shadow: 0px 0px 10px rgba(242, 242, 242, 0.2);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+  
+#expand {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    padding-left: 3px;
+    border-radius: 0 20px 20px 0;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 3px solid var(--grey);
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+}
+  
+#expand:hover {
+    background: rgba(24 23 23 / 0.5);
+}
+  
+#expand > span {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+}
+  
+#expand.show { left: var(--navWidth); }
+#expand.show > span { transform: rotate(0); }
+  
+nav > div {
+    width: 100%;
+    border-top: 3px solid var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    gap: 5vh;
+    align-items: center;
+}
+  
+#accessMembersOnlyBtn, #accessLoginOnlyBtn {
+    color: var(--orange);
+    display: relative;
+    border-radius: 50%;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+ 
+#accessMembersOnlyBtn:hover, #accessLoginOnlyBtn:hover {
+    background: rgba(3, 59, 85, 0.6);
+    box-shadow: 0px 0px 10px rgba(3, 59, 85, 0.6);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+  
+#accessMembersOnly, #accessLoginOnly {
+    display: none;
+}
